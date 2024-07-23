@@ -1,0 +1,134 @@
+.section {
+  margin: 200px 0;
+
+  @media (max-width: $breakpoint1450) {
+    margin: 140px 0;
+  }
+
+  @media (max-width: $breakpoint992) {
+    margin: 80px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 40px 0;
+  }
+}
+
+.section-launchpool {
+  margin: 100px 0;
+
+  @media (max-width: $breakpoint1450) {
+    margin: 80px 0;
+  }
+
+  @media (max-width: $breakpoint992) {
+    margin: 60px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 40px 0;
+  }
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 80px;
+
+  .yellow-text {
+    color: var(--main-yellow);
+  }
+
+  &--small {
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint1450) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: $breakpoint1450) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 30px;
+  }
+}
+
+
+.section-title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 115%;
+  text-align: center;
+  color: var(--base-white);
+
+  @media (max-width: $breakpoint1450) {
+    font-size: 48px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    font-size: 42px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 32px;
+  }
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.section-title--mini {
+  font-size: 32px;
+
+  @media (max-width: $breakpoint1450) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
+  }
+}
+
+.section-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--base-white);
+
+  @media (max-width: $breakpoint768) {
+    font-size: 18px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+
+
+.section-head--left {
+
+  .section-title,
+  .section-text {
+    text-align: left;
+  }
+}

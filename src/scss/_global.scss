@@ -1,0 +1,73 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint1450) {
+    // max-width: 1200px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    // max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    // max-width: 740px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    // max-width: none;
+  }
+}
+
+.container--launchpool {
+  max-width: 1200px;
+}
+
+.container--wide {
+  max-width: 1760px;
+}
+
+// Body Locked
+body {
+  background: linear-gradient(90deg, #0d0b0a 0%, #06060a 29.31%, #08070b 47.4%, #08070c 60.7%, #07070d 100%);
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--base-white);
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+.main__body {
+  &--white {
+    background: var(--base-white);
+    color: var(--base-black-text);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+// Container & Breakpoints
+@use 'sass:math';
+$containerWidth: 1460;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1450: 1449.98+px;
+$breakpoint992: 991.98+px;
+$breakpoint768: 767.98+px;
+$breakpoint480: 479.98+px;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint992;
+$burgerColor: 'black';
+$burgerActiveColor: 'white';
+
+
+:root {
+  // Шрифты (переменные)
+  --font-family: "SF UI Text", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Gotham Pro", sans-serif;
+
+  // Цвета (переменные)
+  --base-white: #fff;
+  --base-black-text: #151719;
+  --base-black: #000000;
+  --base-red: #ff455c;
+  --base-blue: #007aff;
+  --base-gray-text: #92969c;
+  --base-gray: #8b8b8b;
+  --base-green: #219653;
+  --theme-logo: #b2947b;
+  --theme-dark-blue: #234a6c;
+  --plagin-gray: #868686;
+  --main-yellow: #ffdd2e;
+}
