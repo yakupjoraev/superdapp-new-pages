@@ -21,6 +21,10 @@
   max-width: 100%;
 }
 
+.logo__img-white {
+  display: none;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -62,6 +66,8 @@
 
   }
 }
+
+
 
 .burger {
   display: none;
@@ -364,4 +370,40 @@
   .burger span {
     background-color: var(--base-black-text);
   }
+}
+
+.header-white .menu__item-link--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #f2af01;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--base-white);
+
+
+}
+
+.menu__item-link--certik {
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  @media screen and (max-width: $burgerBreakpoint) {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(7500%) hue-rotate(49deg) brightness(116%) contrast(104%);
+  }
+
+}
+
+.theme-btn {
+  cursor: pointer;
 }

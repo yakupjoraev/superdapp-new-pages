@@ -58,6 +58,20 @@ function fixedNav() {
 }
 window.addEventListener('scroll', fixedNav)
 
+function theme() {
+  const btn = document.querySelector('.theme-btn');
+
+  if (!btn) {
+    return null
+  }
+
+  const wrapper = document.querySelector('.wrapper')
+
+  btn.addEventListener('click', () => {
+    wrapper.classList.toggle('dark')
+  })
+}
+theme();
 
 //плавный скролл
 const anchors = document.querySelectorAll('a[href*="#"]')
